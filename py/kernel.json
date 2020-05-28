@@ -1,0 +1,4 @@
+{
+  "argv":["/opt/conda/bin/python", "/objectscriptkernel/kernel.py", "-f", "{connection_file}"],
+  "display_name":"ObjectScript"
+}
