@@ -1,21 +1,21 @@
 version: '3.6'
 services:
   iris:
-    build: 
+    build:
       context: ./iris
       dockerfile: Dockerfile
     restart: always
-    ports: 
+    ports:
       - 51773:51773
-      - 52773:52773 
-    volumes: 
+      - 52773:52773
+    volumes:
       - ./:/irisdev/app
   jupyter:
-    build: 
+    build:
       context: ./py
       dockerfile: Dockerfile
     restart: always
-    ports: 
+    ports:
       - 8888:8888
-    volumes: 
-      - ./Examples:/home/jovyan/work
+    volumes:
+      - ./examples:/home/jovyan/work
