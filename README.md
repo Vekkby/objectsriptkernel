@@ -10,7 +10,7 @@ It allows to execute ObjectScript inside a Jupyter Notebook.
 Great for quick prototyping, teaching, creating buisness presentations showing IRIS features.
 
 ## Challenges I ran into
-Almost every step was a challenge as I'm new to both Docker and ObjectScript.
+Almost every step was a new challenge as I've never used neither Docker nor ObjectScript.
 
 ## Accomplishments that I proud of
 Finding (well, literally) how to capture ObjectScript console output.
