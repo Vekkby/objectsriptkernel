@@ -44,7 +44,14 @@ $ docker-compose up -d --build
 ```
 
 ## How to Work With it
+You may access the notebook server from the browser using 
+```
+localhost:8888
+``` 
 
-Open localhost:8888 in browser.
+There's a sample notebook named 'hello.ipynb' in the 'work' directory. 
+![alt text](https://i.imgur.com/ualyzhy.gif "Example Notebook")
 
-There's a sample notebook named 'hello.ipynb' in the 'work' directory. Open it and just run cells one by one.
+Just open it and run example in cells:
+![alt text](https://i.imgur.com/42zQpo7.gif "Example Notebook Execution")
+
