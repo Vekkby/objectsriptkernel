@@ -10,7 +10,7 @@ ClassMethod CodeResult(vstrCommand As %String) As %String [ ProcedureBlock = 0 ]
         set tOldIO = $io
         try {
             set str=""
-
+            set status = 1
             //Redirect IO to the current routine - makes use of the labels defined below
             use $io::("^"_$ZNAME)
 
@@ -18,9 +18,10 @@ ClassMethod CodeResult(vstrCommand As %String) As %String [ ProcedureBlock = 0 ]
             do ##class(%Device).ReDirectIO(1)
 
             XECUTE (vstrCommand)
-            
+
         } catch ex {
-            set str = ""
+            set str = ex.DisplayString()
+            set status = 0
         }
 
         //Return to original redirection/mnemonic routine settings
@@ -31,7 +32,7 @@ ClassMethod CodeResult(vstrCommand As %String) As %String [ ProcedureBlock = 0 ]
         }
         do ##class(%Device).ReDirectIO(tOldIORedirected)
 
-        quit str 
+        quit {"status":(status), "out":(str)}.%ToJSON()
 
 rchr(c)
     quit
