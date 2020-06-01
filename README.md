@@ -5,23 +5,23 @@ This is an ObjectScript wrapper kernel for Project Jupyter.
 To make a useful tool for other ObjectScript beginners to learn and easily share info.
 
 ## What it does
-It allows to execute ObjectScript inside a Jupyter Notebook.
+It allows us to execute ObjectScript inside a Jupyter Notebook.
 
-Great for quick prototyping, teaching, creating buisness presentations showing IRIS features.
+Great for quick prototyping, teaching, creating business presentations showing IRIS features.
 
 ## Challenges I ran into
-Almost every step was a new challenge as I've never used neither Docker nor ObjectScript.
+Almost every step was a new challenge as I've never used either Docker or ObjectScript.
 
 ## Accomplishments that I proud of
 Finding (well, literally) how to capture ObjectScript console output.
 
-Details yet elude me, but I believe that I get the general gist of it.
+I believe that I get the general gist of it.
 
 ## What I learned
-How to create Docker files, simple Jupyter wrapper kernels. That ObjectScript can execute it's own code.
+How to create Docker files, simple Jupyter wrapper kernels. That ObjectScript can execute its own code.
 
 ## Built with
-Using VSCode and ObjectScript plugin (which is great, by the way), IRIS Community Edition in Docker,
+Using VSCode and [ObjectScript plugin](https://marketplace.visualstudio.com/items?itemName=daimor.vscode-objectscript) (which is great, by the way), IRIS Community Edition in Docker,
 Jupyter in Docker, IRIS Native API for Python
 
 
