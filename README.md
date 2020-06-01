@@ -18,7 +18,7 @@ Finding (well, literally) how to capture ObjectScript console output.
 I believe that I get the general gist of it.
 
 ## What I learned
-How to create Docker files, simple Jupyter wrapper kernels. That ObjectScript can execute its own code.
+How to create Docker files, simple Jupyter wrapper kernels. That ObjectScript can execute its code.
 
 ## Built with
 Using VSCode and [ObjectScript plugin](https://marketplace.visualstudio.com/items?itemName=daimor.vscode-objectscript) (which is great, by the way), IRIS Community Edition in Docker,
@@ -52,6 +52,6 @@ localhost:8888
 There's a sample notebook named 'hello.ipynb' in the 'work' directory. 
 ![alt text](https://i.imgur.com/ualyzhy.gif "Example Notebook")
 
-Just open it and run example in cells:
+Just open it and run examples in cells:
 ![alt text](https://i.imgur.com/42zQpo7.gif "Example Notebook Execution")
 
