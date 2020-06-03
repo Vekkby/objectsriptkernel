@@ -1,7 +1,7 @@
 # objectsriptkernel
 This is an ObjectScript wrapper kernel for Project Jupyter.
 
-Demo: http://objectscriptkernel.eastus.cloudapp.azure.com/
+Demo: [http://objectscriptkernel.eastus.cloudapp.azure.com/](http://objectscriptkernel.eastus.cloudapp.azure.com/)
 
 ## Inspiration
 To make a useful tool for other ObjectScript beginners to learn and easily share info.
