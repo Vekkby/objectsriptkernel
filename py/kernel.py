@@ -1,6 +1,7 @@
 from ipykernel.kernelbase import Kernel
 import irisnative
-import cgi
+#import cgi
+import html
 import json
 
 
@@ -71,8 +72,8 @@ class ObjectScriptKernel(Kernel):
         exception_msg = excecution_exception[error_code_end:]
 
         msg_html = (f'<p class="ansi-cyan-fg">Line {line_num}:</p>'
-                    f'<p class="ansi-red-fg">{cgi.escape(codeline)}</p>'
-                    f'<p><span class="ansi-red-fg">{cgi.escape(error_code)}</span><span>{cgi.escape(exception_msg)}</span></p>')
+                    f'<p class="ansi-red-fg">{html.escape(codeline)}</p>'
+                    f'<p><span class="ansi-red-fg">{html.escape(error_code)}</span><span>{html.escape(exception_msg)}</span></p>')
 
         msg = {
                 'source': 'kernel',
