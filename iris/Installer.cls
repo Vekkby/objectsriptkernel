@@ -7,6 +7,7 @@ XData setup
   <Default Name="SourceDir" Value="#{$system.Process.CurrentDirectory()}src"/>
   <Default Name="Namespace" Value="IRISAPP"/>
   <Default Name="app" Value="irisapp" />
+  <SystemSetting Name="Config.Startup.DefaultPort" Value="51773" />
 
   <Namespace Name="${Namespace}" Code="${Namespace}" Data="${Namespace}" Create="yes" Ensemble="0">
 
