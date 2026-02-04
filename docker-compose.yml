@@ -17,5 +17,8 @@ services:
     restart: always
     ports:
       - 8888:8888
+    command:
+      - "start-notebook.py"
+      - "--IdentityProvider.token=''"
     volumes:
       - ./examples:/home/jovyan/work

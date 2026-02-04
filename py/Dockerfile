@@ -1,17 +1,16 @@
 FROM jupyter/minimal-notebook
 
-
-
-COPY irisnative-1.0.0-cp34-abi3-linux_x86_64.whl /tmp/
-RUN pip install /tmp/irisnative-1.0.0-cp34-abi3-linux_x86_64.whl
+# RUN pip install jupyterthemes
+# RUN pip install --upgrade jupyterthemes
+RUN pip install intersystems-irispython
 
 COPY kernel.py /objectscriptkernel/
 COPY kernel.json /objectscriptkernel/
 
 RUN jupyter kernelspec install --prefix=$CONDA_DIR /objectscriptkernel/
 
+# RUN jt -r
 USER root
 
 COPY start-notebook.sh /usr/local/bin/
 RUN chmod 777 /usr/local/bin/start-notebook.sh
-RUN rm -rf /tmp/irisnative-1.0.0-cp34-abi3-linux_x86_64.whl
